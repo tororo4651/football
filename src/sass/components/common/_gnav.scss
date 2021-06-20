@@ -1,0 +1,122 @@
+// グローバルナビゲーション
+
+
+// ボタン
+.gNavBtn {
+  position: relative;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  border: none;
+  padding: 0;
+  background-color: initial;
+  opacity: 0.8;
+  // outline: none;
+  appearance: none;
+  cursor: pointer;
+
+  &__bar {
+    position: relative;
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    transition: background-color 0.5s;
+
+    .is-gNavOpen & {
+      background-color: transparent;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      transition: transform 0.5s;
+    }
+
+    &::before {
+      transform: translateY(-10px);
+
+      .is-gNavOpen & {
+        transform: translateY(0) rotate(225deg);
+      }
+    }
+
+    &::after {
+      transform: translateY(10px);
+
+      .is-gNavOpen & {
+        transform: translateY(0) rotate(-225deg);
+      }
+    }
+  }
+}
+
+
+// メニュー
+.gNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#042230, 0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 3s;
+
+  // グローバルナビゲーション OPEN
+  .is-gNavOpen & {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &__list {
+    margin: 98px 0 30px;
+  }
+
+  &__item {
+    border-bottom: solid 1px #eee;
+
+    &:first-of-type {
+      border-top: solid 1px #eee;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+
+    &Ja {
+      display: block;
+      margin-top: 5px;
+      font-size: 12px;
+      font-weight: normal;
+    }
+  }
+
+
+  // SNS
+  &__sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+
+    &Item {
+      margin: 0 10px;
+    }
+  }
+}
+
+
+html.is-gNavOpen,
+.is-gNavOpen body {
+  height: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,104 @@
+// 表・Standings
+
+
+// 変数・ミックスイン・関数
+@use "../../../global/index" as g;
+
+
+.standingsTable {
+  width: 100%;
+  min-width: 550px;
+  table-layout: fixed;
+  border-spacing: 0;
+
+  &__header,
+  &__data {
+    border-bottom: solid 1px #d3d3d3;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #282832;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__body {
+    .standingsTable__row:nth-child(odd) {
+      background-color: #eee;
+    }
+  }
+
+  &__header:first-child {
+    width: 42px;
+    background-color: #282832;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  &__header:nth-child(2) {
+    box-sizing: border-box;
+    width: 150px;
+    padding-right: 10px;
+    line-height: 1.2;
+    background-color: #282832;
+    color: #fff;
+    text-align: left;
+    font-weight: 900;
+    box-shadow: 4px 0 4px rgba(0,0,0,0.2);
+  }
+
+  &__header:last-child {
+    width: 150px;
+  }
+
+  &__head {
+    .standingsTable__header {
+      border-top: solid 1px #d3d3d3;
+      font-weight: bold;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__teamLogo {
+    width: 24px;
+    margin: 3px 13px 3px 3px;
+  }
+
+  &__resultImage {
+    width: 16px;
+  }
+
+
+  @include g.mq(lg-max) {
+    &__header,
+    &__data {
+      font-size: 13px;
+    }
+
+    &__headerInner {
+      writing-mode: vertical-rl;
+      height: 48px;
+    }
+
+    // レスポンシブテーブル
+    &Wrapper {
+      overflow-x: auto;
+    }
+
+    &__header:first-child {
+      position: sticky;
+      left: 0;
+    }
+
+    &__header:nth-child(2) {
+      position: sticky;
+      left: 42px;
+      width: 120px;
+    }
+  }
+}

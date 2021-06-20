@@ -1,0 +1,144 @@
+// セクション・Showdown
+
+
+// 変数・ミックスイン・関数
+@use "../../../global/_index.scss" as g;
+
+
+.showdownSection {
+  padding: 31px 10px 43px;
+  background-color: #fff;
+  border-radius: 20px;
+
+  &__heading {
+    margin-bottom: 45px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #621f82;
+    position: sticky;
+    top: 0;
+
+    &Ja {
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+
+  &__team {
+    flex: 1;
+    align-self: flex-start;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #0b5578;
+
+    &Logo {
+      box-sizing: border-box;
+      width: 84px;
+      padding: 7px;
+      margin-bottom: 8px;
+      background-color: #0b5578;
+      border-radius: 50%;
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #282832;
+
+    &Day {
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    &Time {
+      margin-bottom: 5px;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    &Timezone {
+      font-size: 10px;
+    }
+  }
+
+
+  @include g.mq(md-min) {
+    padding: 58px 50px 70px;
+
+    &__heading {
+      margin-bottom: 23px;
+      text-align: start;
+      font-size: 32px;
+    }
+
+    &__body {
+      padding: 0 50px;
+      background-image: url(/images/top/logo-blue.svg);
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: 38px 38px;
+    }
+
+    &__team {
+      margin: 0;
+
+      &--home {
+        flex-direction: row-reverse;
+        text-align: right;
+
+        .showdownSection__teamLogo {
+          margin: 0 9.3% 0 7.3%;
+        }
+      }
+
+      &--away {
+        flex-direction: row;
+        text-align: left;
+
+        .showdownSection__teamLogo {
+          margin: 0 7.3% 0 9.3%;
+        }
+      }
+    }
+  }
+
+  @include g.mq(xxl-min) {
+    &__team {
+      font-size: 24px;
+
+      &Logo {
+        width: 169px;
+        padding: 13px;
+      }
+    }
+
+    &__date {
+
+      &Day {
+        font-size: 15px;
+      }
+
+      &Time {
+        margin-bottom: 16px;
+        font-size: 32px;
+      }
+
+      &Timezone {
+        font-size: 16px;
+      }
+    }
+  }
+}

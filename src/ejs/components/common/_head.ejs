@@ -1,0 +1,35 @@
+<%
+  if (typeof title === 'undefined') {
+    var title = '';
+  }
+
+  if (typeof data === 'undefined') {
+    var data = {
+      head: 'default',
+      body: 'default'
+    }
+  }
+%>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    <% if (title) { %>
+      <%- title %> | Football Game
+    <% } else { %>
+      Football Game
+    <% } %>
+  </title>
+
+  <meta name="description" content="<%= description %>">
+  <meta name="keywords" content="<%- keywords %>">
+  <meta name="author" content="<%- author %>">
+  <meta name="robots" content="<%= robots %>">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>

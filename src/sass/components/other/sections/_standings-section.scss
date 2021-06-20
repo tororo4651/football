@@ -1,0 +1,37 @@
+// セクション・Standings
+
+
+// 変数・ミックスイン・関数
+@use "../../../global" as g;
+
+
+.standingsSection {
+  padding: 31px 10px 43px;
+  background-color: #fff;
+  border-radius: 20px;
+
+  &__heading {
+    margin-bottom: 28px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #621f82;
+
+    &Ja {
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+
+  @include g.mq(md-min) {
+    padding: 58px 50px 70px;
+
+    &__heading {
+      text-align: left;
+      font-size: 32px;
+    }
+  }
+}

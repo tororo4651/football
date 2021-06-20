@@ -1,0 +1,25 @@
+// アニメーション
+
+
+// スライドイン
+@keyframes slideIn {
+  from {
+    transform: translateY(1.3em);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+// フォーカスイン
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

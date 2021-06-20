@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', top) %>
+
+<body class="top">
+
+</body>
+
+<%- include('components/common/_header') %>
+
+<%- include('components/other/_hero.ejs') %>
+
+
+<main class="topMain l-container">
+
+  <section class="topMain__showdown showdownSection">
+    <h2 class="showdownSection__heading">
+      Next Showdown
+      <span class="showdownSection__headingJa">次の対戦</span>
+    </h2>
+
+    <div class="showdownSection__body">
+      <div class="showdownSection__team showdownSection__team--home">
+        <img class="showdownSection__teamLogo" src="/images/teams/battle-gear.svg" alt="">
+        Battle Gear
+      </div><!-- /.showdownSection__team -->
+
+      <div class="showdownSection__date">
+        <span class="showdownSection__dateDay">Tomorrow</span>
+        <span class="showdownSection__dateTime">20:00</span>
+        <span class="showdownSection__dateTimezone">SGT (UTC+8)</span>
+      </div><!-- /.showdownSection__date -->
+
+      <div class="showdownSection__team showdownSection__team--away">
+        <img class="showdownSection__teamLogo" src="/images/teams/mecha-mask.svg" alt="">
+        Mecha Mask
+      </div><!-- /.showdownSection__team -->
+    </div><!-- /.showdownSection__body -->
+  </section>
+
+  <section class="topMain__standings standingsSection">
+    <h2 class="standingsSection__heading">
+      tables & Standings
+      <span class="standingsSection__headingJa">順位表</span>
+    </h2>
+
+    <div class="standingsSection__tableWrapper standingsTableWrapper">
+      <table class="standingsSection__table standingsTable">
+        <thead class="standingsTable__head">
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">順位</th>
+            <th class="standingsTable__header">チーム</th>
+            <th class="standingsTable__header"><span class="standingsTable__headerInner">勝点</span></th>
+            <th class="standingsTable__header"><span class="standingsTable__headerInner">試合数</span></th>
+            <th class="standingsTable__header"><span class="standingsTable__headerInner">勝</span></th>
+            <th class="standingsTable__header"><span class="standingsTable__headerInner">分</span></th>
+            <th class="standingsTable__header"><span class="standingsTable__headerInner">負</span></th>
+            <th class="standingsTable__header"><span class="standingsTable__headerInner">得点</span></th>
+            <th class="standingsTable__header"><span class="standingsTable__headerInner">失点</span></th>
+            <th class="standingsTable__header"><span class="standingsTable__headerInner">得失点</span></th>
+            <th class="standingsTable__header">直近5試合</th>
+          </tr>
+        </thead>
+
+        <tbody class="standingsTable__body">
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/battle-gear.svg">
+                Battle Gear
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/sea-serpent.svg">
+                Sea Serpent
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/chess-queen.svg">
+                Chess Queen
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+
+          <tr class="standingsTable__row">
+            <th class="standingsTable__header">1</th>
+            <th class="standingsTable__header">
+              <a class="standingsTable__link" href="#">
+                <img class="standingsTable__teamLogo" src="/images/teams/all4one.svg">
+                ALL4ONE
+              </a>
+            </th>
+            <td class="standingsTable__data">31</td>
+            <td class="standingsTable__data">11</td>
+            <td class="standingsTable__data">10</td>
+            <td class="standingsTable__data">1</td>
+            <td class="standingsTable__data">0</td>
+            <td class="standingsTable__data">29</td>
+            <td class="standingsTable__data">7</td>
+            <td class="standingsTable__data">22</td>
+            <td class="standingsTable__data">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/draw.svg" alt="引き分け">
+              <img class="standingsTable__resultImage" src="/images/top/lose.svg" alt="負け">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+              <img class="standingsTable__resultImage" src="/images/top/win.svg" alt="勝ち">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- /. -->
+  </section>
+</main>
+
+
+<%- include('components/common/_footer.ejs') %>
+
+</html>

@@ -1,0 +1,14 @@
+// ブレイクポイント
+$breakpoints: (
+  'xs-min': '(min-width: 320px)',
+  'sm-min': '(min-width: 360px)',
+  'sm-max': '(max-width: 359px)',
+  'md-min': '(min-width: 768px)',
+  'md-max': '(max-width: 767px)',
+  'lg-min': '(min-width: 900px)',
+  'lg-max': '(max-width: 899px)',
+  'xl-min': '(min-width: 1000px)',
+  'xl-max': '(max-width: 999px)',
+  'xxl-min': '(min-width: 1100px)',
+  'xxl-max': '(max-width: 1099px)'
+);

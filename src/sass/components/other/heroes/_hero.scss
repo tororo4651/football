@@ -1,0 +1,202 @@
+// ヒーローイメージ
+
+
+// 変数・ミックスイン・関数
+@use "../../../global" as g;
+
+
+.hero {
+  position: relative;
+  height: 882px;
+  display: flex;
+  align-items: center;
+
+  &__placeholderImage {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        58deg,
+        #621f82 0%,
+        #611b82 40%,
+        #0b5578 100%
+      );
+      mix-blend-mode: hue;
+      opacity: 0.8;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.5;
+    }
+  }
+
+  &__mainImage {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    animation: fadeIn 3s 1s ease-in-out backwards;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        58deg,
+        #621f82 0%,
+        #611b82 40%,
+        #0b5578 100%
+      );
+      mix-blend-mode: hue;
+      opacity: 0.8;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.5;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &Body {
+      width: 313px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 18px;
+    white-space: nowrap;
+    line-height: 1.3;
+
+    &Sub {
+      display: block;
+      font-size: 38px;
+      font-weight: 400;
+      overflow: hidden;
+    }
+
+    &Main {
+      display: block;
+      font-size: 48px;
+      font-weight: 900;
+      overflow: hidden;
+    }
+
+    &Year {
+      display: block;
+      font-size: 98px;
+      font-weight: 900;
+      overflow: hidden;
+    }
+
+    &Image {
+      width: 40px;
+      margin-left: 45px;
+    }
+
+    &SlideIn {
+      display: block;
+      animation: slideIn 1s ease-in-out;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  &__figure {
+    margin-bottom: 35px;
+
+    &Image {
+      width: 151px;
+    }
+  }
+
+
+  @include g.mq(md-min) {
+    &__content {
+      flex-direction: row;
+
+      > * {
+        flex: 1;
+      }
+
+      &Body {
+        width: auto;
+        padding-left: 50px;
+      }
+    }
+
+    &__figure {
+      margin-bottom: 0;
+
+      &Image {
+        display: block;
+        width: 330px;
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+
+  @include g.mq(xl-min) {
+    &__heading {
+
+      &Sub {
+        font-size: 60px;
+      }
+
+      &Main {
+        font-size: 75px;
+      }
+
+      &Year {
+        margin-top: -17px;
+        font-size: 153px;
+      }
+
+      &Image {
+        width: 62px;
+        margin-left: 72px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+
+  @include g.mq(sm-max) {
+    &__content {
+      transform: scale(0.8);
+    }
+  }
+}

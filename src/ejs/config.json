@@ -1,0 +1,15 @@
+{
+  "top": {
+    "description": "説明文１",
+    "keywords": "Football, Football Game, eSports",
+    "author": "山田 太郎",
+    "robots": "all"
+  },
+  "about": {
+    "title": "〜について",
+    "description": "説明文２",
+    "keywords": "Football2, Football Game2, eSports2",
+    "author": "山田 太郎２",
+    "robots": "all"
+  }
+}
